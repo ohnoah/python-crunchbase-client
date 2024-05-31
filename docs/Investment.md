@@ -1,0 +1,27 @@
+# Investment
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**announced_on** | **date** | Date when the Investment is announced\\ Field Type: date\\ Searchable: Yes\\ Search Operators: between, blank, eq, gte, lte  | [optional] 
+**created_at** | **datetime** | Field Type: datetime\\ Searchable: Yes\\ Search Operators: between, blank, eq, gte, lte  | [optional] 
+**entity_def_id** | **str** | Field Type: enum\\ Searchable: Yes\\ Search Operators: blank, eq, includes, not_eq, not_includes\\ Possible values are:  * investment - Investment  | [optional] 
+**funding_round_identifier** | **AllOfInvestmentFundingRoundIdentifier** | Name of the funding round where the Investment is made\\ Field Type: identifier\\ Searchable: Yes\\ Search Operators: blank, contains, eq, includes, not_contains, not_eq, not_includes, starts  | [optional] 
+**funding_round_investment_type** | **str** | Type of Funding Round where the Investment is made (e.g. Seed, Series A, Private Equity, Debt Financing)\\ Field Type: enum\\ Searchable: Yes\\ Search Operators: blank, eq, includes, not_eq, not_includes\\ Possible values are:  * angel - Angel  * convertible_note - Convertible Note  * corporate_round - Corporate Round  * debt_financing - Debt Financing  * equity_crowdfunding - Equity Crowdfunding  * grant - Grant  * initial_coin_offering - Initial Coin Offering  * non_equity_assistance - Non-equity Assistance  * post_ipo_debt - Post-IPO Debt  * post_ipo_equity - Post-IPO Equity  * post_ipo_secondary - Post-IPO Secondary  * pre_seed - Pre-Seed  * private_equity - Private Equity  * product_crowdfunding - Product Crowdfunding  * secondary_market - Secondary Market  * seed - Seed  * series_a - Series A  * series_b - Series B  * series_c - Series C  * series_d - Series D  * series_e - Series E  * series_f - Series F  * series_g - Series G  * series_h - Series H  * series_i - Series I  * series_j - Series J  * series_unknown - Venture - Series Unknown  * undisclosed - Funding Round  | [optional] 
+**funding_round_money_raised** | **AllOfInvestmentFundingRoundMoneyRaised** | Amount of money raised in Funding Round\\ Field Type: money\\ Searchable: Yes\\ Search Operators: between, blank, eq, gt, gte, lt, lte, not_eq  | [optional] 
+**identifier** | **AllOfInvestmentIdentifier** | Investment description coming soon\\ Field Type: identifier\\ Searchable: Yes\\ Search Operators: blank, contains, eq, includes, not_contains, not_eq, not_includes, starts  | 
+**investor_identifier** | **AllOfInvestmentInvestorIdentifier** | Name of the investor who participated in the Investment\\ Field Type: identifier\\ Searchable: Yes\\ Search Operators: blank, contains, eq, includes, not_contains, not_eq, not_includes, starts  | [optional] 
+**investor_stage** | **list[str]** | This describes the stage of investor this organization or person is (e.g. Angel, Fund of Funds, Venture Capital)\\ Field Type: enum_multi\\ Searchable: Yes\\ Search Operators: blank, includes, includes_all, not_includes, not_includes_all  | [optional] 
+**investor_type** | **list[str]** | This describes the type of investor this organization or person is (e.g. Angel, Fund of Funds, Venture Capital)\\ Field Type: enum_multi\\ Searchable: Yes\\ Search Operators: blank, includes, includes_all, not_includes, not_includes_all  | [optional] 
+**is_lead_investor** | **bool** | This field indicates whether an investor led/organized the investment\\ Field Type: boolean\\ Searchable: Yes\\ Search Operators: blank, eq  | [optional] 
+**money_invested** | **AllOfInvestmentMoneyInvested** | Amount of money an Investor contributed into an investment\\ Field Type: money\\ Searchable: Yes\\ Search Operators: between, blank, eq, gt, gte, lt, lte, not_eq  | [optional] 
+**name** | **str** | Field Type: text_blob\\ Searchable: No  | [optional] 
+**organization_diversity_spotlights** | [**list[EntityIdentifier]**](EntityIdentifier.md) | Types of diversity represented in an organization, specifically of those who are founding members, currently the CEO, or have check-writing abilities in an investment firm. This feature is in beta and may change with future updates.\\ Field Type: identifier_multi\\ Searchable: Yes\\ Search Operators: blank, includes, includes_all, not_includes, not_includes_all  | [optional] 
+**organization_identifier** | **AllOfInvestmentOrganizationIdentifier** | Name of the organization that received the investment\\ Field Type: identifier\\ Searchable: Yes\\ Search Operators: blank, contains, eq, includes, not_contains, not_eq, not_includes, starts  | [optional] 
+**partner_identifiers** | [**list[EntityIdentifier]**](EntityIdentifier.md) | Name of the individual who led a funding round for his/her firm\\ Field Type: identifier_multi\\ Searchable: Yes\\ Search Operators: blank, includes, includes_all, not_includes, not_includes_all  | [optional] 
+**permalink** | **str** | Field Type: permalink\\ Searchable: No  | [optional] 
+**updated_at** | **datetime** | Field Type: datetime\\ Searchable: Yes\\ Search Operators: between, blank, eq, gte, lte  | [optional] 
+**uuid** | **str** | Field Type: uuid\\ Searchable: Yes\\ Search Operators: blank, eq, includes, not_eq, not_includes  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

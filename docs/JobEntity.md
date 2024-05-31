@@ -1,0 +1,10 @@
+# JobEntity
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**properties** | [**Job**](Job.md) |  | [optional] 
+**cards** | [**JobEntityCards**](JobEntityCards.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
